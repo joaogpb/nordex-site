@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --nordex-blue: #1677ff;
+  --nordex-blue-light: #38bdf8;
+  --nordex-orange: #ff7a00;
+  --nordex-dark: #0b1220;
+  --nordex-dark-2: #111827;
+  --nordex-border: #243044;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--nordex-dark);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a { color: inherit; text-decoration: none; }
+::selection { background: var(--nordex-blue); color: white; }
+
+.container-nordex {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.glow-blue {
+  box-shadow: 0 0 80px rgba(22,119,255,.15), 0 0 160px rgba(22,119,255,.08);
+}
+
+.grid-tech {
+  background-image:
+    linear-gradient(rgba(56,189,248,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56,189,248,.04) 1px, transparent 1px);
+  background-size: 45px 45px;
+}
+
+.hero-gradient {
+  background:
+    radial-gradient(circle at 80% 20%, rgba(22,119,255,.18), transparent 35%),
+    radial-gradient(circle at 20% 70%, rgba(255,122,0,.08), transparent 30%);
+}
+
+.blue-gradient {
+  background: linear-gradient(135deg, #1677ff 0%, #38bdf8 100%);
+}
